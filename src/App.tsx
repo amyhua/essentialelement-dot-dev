@@ -246,11 +246,14 @@ function App() {
         </div>
         <p className="text-xl mt-5 mb-14">
           <h2 className="font-bold text-2xl">
-            Open for Hire
+            Open for Hire.
           </h2>
           <div className="mt-3">
             Your inquiries are welcome. Send an email to <a className="underline" href="mailto:amy@essentialelement.dev">amy@essentialelement.dev</a> to get the conversation started.
           </div>
+        </p>
+        <p className="mt-14">
+          This website is open sourced on <a href="//github.com/amyhua/essentialelement.dev" className="underline" target="_blank">Github</a>.
         </p>
       </Section>
     </main>
