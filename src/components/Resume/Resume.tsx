@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import BlockRole from "../BlockRole/BlockRole";
 import { AffiliationLogo } from "../Logo/Logo";
@@ -37,8 +38,12 @@ const Resume = ({
     content: () => document.getElementById('contents'),
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
-    <div className="mb-20">
+    <div>
       <Helmet>
         <title>Amy Hua - Resume | Essential Element</title>
         <style media="print">{`
@@ -48,7 +53,7 @@ const Resume = ({
         `}</style>
       </Helmet>
       <TopNav shadow={true} handlePrint={handlePrint} />
-      <div className="bg-slate-300 min-h-[100vh] pb-10">
+      <div className="bg-slate-300 min-h-[100vh] pt-10 pb-[150px]">
         <style media="print">{`
           .external-logo {
             display: none;
@@ -59,7 +64,7 @@ const Resume = ({
           width: 0,
           position: 'absolute'
         }} title="print" />
-        <main className="bg-white shadow-md pt-8 pb-14 px-8 mx-auto max-w-7xl mb-10" id="contents">
+        <main className="my-10 print:my-0 bg-white shadow-md pt-8 pb-14 px-8 mx-auto max-w-7xl mb-10" id="contents">
           <h2> <span className="font-bold text-lg">{name}</span>
           <Middot />
           <span>
