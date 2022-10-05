@@ -1,30 +1,35 @@
 import Logo from "../Logo/Logo";
-import styles from './TopNav.module.scss';
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
-
-const TopNav = () => {
+const TopNav = ({ shadow, handlePrint }: { shadow?: boolean; handlePrint?: any; }) => {
+  
   return (
-    <Disclosure as="nav" className="bg-white text-gray-800 top-0 z-10" style={{
+    <Disclosure as="nav" className={classNames(
+      "bg-white text-gray-800 top-0 z-10",
+      {
+        "shadow-md": shadow,
+      }
+    )} style={{
       position: 'sticky',
     }}>
       {({ open }) => (
         <>
-          <div className="max-w-6xl mx-auto py-3 px-2 sm:px-4 lg:px-8">
+          <div className="max-w-7xl mx-auto py-3 px-2 sm:px-4 lg:px-8">
             <div className="relative flex justify-between h-16 py-3">
               <div className="flex px-2 lg:px-0">
-                <div className="flex-shrink-0">
+                <Link to="/" className="flex-shrink-0">
                   <Logo
                     full={false}
-                    className="block lg:hidden h-9 w-auto"
+                    className="block lg:hidden h-10 w-auto"
                   />
                   <Logo
                     full={true}
-                    className="hidden lg:block h-9 w-auto"
+                    className="hidden lg:block h-10 w-auto"
                   />
-                </div>
+                </Link>
               </div>
               <div className="flex lg:hidden">
                 {/* Mobile menu button */}
@@ -39,17 +44,23 @@ const TopNav = () => {
               </div>
               <div className="hidden lg:block lg:ml-4">
                 <div className="flex items-center">
-                  <a href="#" className="text-lg font-semibold mr-8 px-5">About</a>
+                  {/* <a href="#" className="text-lg uppercase tracking-widest font-semibold mr-10">Writing</a>
+                  <a href="#" className="text-lg uppercase tracking-widest font-semibold mr-10">About</a> */}
                   <button
-                    onClick={() => {
+                    onClick={
+                      handlePrint ? handlePrint : () => {
                       document.getElementById('workwithus')?.scrollIntoView({
                         behavior: 'smooth'
                       })
                     }}
                     type="button"
-                    className="text-base font-semibold relative inline-flex items-center px-4 py-2 border border-transparent font-medium rounded-full text-white bg-gray-800 shadow-sm hover:bg-gray-700"
+                    className="text-base font-semibold relative inline-flex items-center px-4 py-2 border border-transparent font-medium text-white bg-gray-800 shadow-sm hover:bg-gray-700 tracking-widest uppercase"
                   >
-                    Work with Us
+                    {
+                      handlePrint ? <>
+                        Print <span className="opacity-60 ml-3">CTRL+P</span>
+                      </> : 'Get in Touch'
+                    }
                   </button>
                 </div>
               </div>

@@ -6,7 +6,11 @@ module.exports = {
   theme: {
     fontFamily: {
     },
-    extend: {},
+    extend: {
+      screens: {
+          'print': { 'raw': 'print' },
+      }
+    },
   },
   plugins: [],
 }
