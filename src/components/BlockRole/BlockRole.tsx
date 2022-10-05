@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import { AffiliationLogo, ExternalLogo } from "../Logo/Logo";
-
-const Middot = () => (<span className="px-1">·</span>)
+import Middot from "../Middot/Middot";
 
 const BlockRole = ({
   company,
@@ -65,7 +64,7 @@ const BlockRole = ({
             })}> - {name}</span> <Middot /> {period}{' '}{
               role &&
               <>
-                <Middot /> <em>{role}</em>
+                <Middot className="hidden sm:inline-block" /> <em className="inline-block sm:inline mt-1 sm:mt-0">{role}</em>
               </>
             }
           </p>
@@ -80,7 +79,7 @@ const BlockRole = ({
       )}>
         {
           contributions.map((contrib: string, i: number) => (
-            <li className={i === 0 ? classNames({
+            <li className={i === 0 ? classNames("pb-2", {
               "pt-3": size === 'large',
               "pt-2": size === 'small'
             }) : undefined}>
@@ -90,7 +89,7 @@ const BlockRole = ({
         }
         {
           outcomes.map((outcome: string, i: number) => (
-            <li className={i === 0 ? classNames({
+            <li className={i === 0 ? classNames("pb-2", {
               "pt-3": size === 'large',
               "pt-2": size === 'small'
             }) : undefined}>

@@ -5,6 +5,8 @@ import { AffiliationLogo } from "../Logo/Logo";
 import TopNav from "../TopNav/TopNav";
 import './Resume.module.css';
 import { useReactToPrint } from 'react-to-print';
+import classNames from "classnames";
+import Middot from "../Middot/Middot";
 
 const ResumeHr = ({ title }: { title: string; }) => (
   <div className="relative pt-9 pb-2">
@@ -28,8 +30,6 @@ const HtmlProgressBar = ({ progress, label }: { progress: number; label: string;
     {unfilledBarsArray.map((x, i: number) => <HtmlBlock key={i} color="#ddd" />)}
   </li>);
 }
-
-const Middot = () => (<span className="px-3">·</span>)
 
 const Resume = ({
   name
@@ -71,13 +71,13 @@ const Resume = ({
             ✉️ <a
               href="mailto:foramyhua@gmail.com">foramyhua@gmail.com</a>
             </span>
-            <Middot />
-            <span>
+            <Middot className="sm:inline-block hidden" />
+            <span className="sm:inline block mt-1 sm:mt-0">
               🏙️ San Francisco, CA
             </span>
           </h2>
           <ResumeHr title="Skills" />
-          <ul className="columns-3" style={{ columns: 3, marginLeft: 0, paddingLeft: 0, }}>
+          <ul className="md:columns-3 sm:columns-2">
             <HtmlProgressBar progress={10} label="Engineering & Coding Skills" />
             <HtmlProgressBar progress={10} label="Javascript" />
             <HtmlProgressBar progress={10} label="HTML & CSS" />
@@ -92,8 +92,8 @@ const Resume = ({
             <HtmlProgressBar progress={3} label="CI/CD Automation Knowledge" />
           </ul>
           <ResumeHr title="Personal Projects" />
-          <div className="flex">
-            <div className="py-5 px-4 rounded-lg border flex-1 mr-2 border-gray-600">
+          <div className="sm:flex">
+            <div className="py-5 px-4 rounded-lg border flex-1 sm:mr-2 border-gray-600">
               <h3 className="uppercase italic tracking-widest font-bold">Free Map Club</h3>
               <a className="underline mb-3 block text-blue-800" href="//freemap.club" target="_blank">freemap.club</a>
               <p>
@@ -103,7 +103,7 @@ const Resume = ({
                 See Product White Paper
               </a>
             </div>
-            <div className="print:hidden py-5 px-4 rounded-lg border flex-1 ml-2 border-gray-600 print:px-0 print:py-0 print:border-none">
+            <div className="print:hidden py-5 px-4 rounded-lg border flex-1 sm:mt-0 mt-3 sm:ml-2 border-gray-600 print:px-0 print:py-0 print:border-none">
               <h3 className="uppercase italic tracking-widest font-bold">EssentialElement.Dev</h3>
               <a className="underline mb-3 block text-blue-800" href="//freemap.club" target="_blank">essentialelement.dev</a>
               <p className="mb-2">
@@ -233,19 +233,22 @@ const Resume = ({
             ]}
           />
           <h3 className="mt-5 font-bold text-lg">Prior Roles</h3>
-          <ul className="list-disc ml-6 leading-8 mt-2">
-            <li>
-              Lead Bootcamp Instructor & Course Designer at <strong>NY Code & Design Academy</strong>, Full Stack Javascript Intensive, 2019
-            </li>
-            <li>
-              Software Engineer at <strong>Databricks</strong>, Product Execution Team,	Sept 2014 — Nov 2014 (took leave)
-            </li>
-            <li>
-              Software Engineer at <strong>Socrata</strong>, Apps Team, Dec 2013 - Aug 2014
-            </li>
-            <li>
-              Management Consulting Analyst at <strong>ATKearney</strong>, Procurement & Analytics, July 2012 - April 2013
-            </li>
+          <ul className="list-disc ml-6 md:leading-8 mt-2">
+            {
+              [
+                <>
+                  Lead Bootcamp Instructor & Course Designer at <strong>NY Code & Design Academy</strong>, Full Stack Javascript Intensive, 2019
+                </>,
+                <>
+                  Software Engineer at <strong>Databricks</strong>, Product Execution Team,	Sept 2014 — Nov 2014 (took leave)
+                </>,
+                <>
+                  Management Consulting Analyst at <strong>ATKearney</strong>, Procurement & Analytics, July 2012 - April 2013
+                </>
+              ].map((bullet: any, i: number) => (
+                <li key={i} className="mb-3 md:mb-0">{bullet}</li>
+              ))
+            }
           </ul>
           <ResumeHr title="Education" />
           <BlockRole
