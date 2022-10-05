@@ -89,8 +89,8 @@ function App() {
         </div>
       }
       <Section className="mt-8">
-        <div className="mb-14">
-          <LogoXL /> <span className="font-mono text-2xl relative pl-3 top-[4px] font-normal inline-block tracking-widest uppercase">Essential Element <span className="text-gray-300">Development</span></span>
+        <div className="mb-14 leading-8">
+          <LogoXL className="mb-5" /> <span className="leading-8 font-mono text-2xl relative sm:pl-3 top-[4px] font-normal inline-block tracking-widest uppercase">Essential Element <span className="text-gray-300">Development</span></span>
         </div>
         <div className="mt-15 text-lg bg-black inline-block py-2 px-4 text-white tracking-widest uppercase mb-3 font-bold">
           We are a
@@ -126,8 +126,8 @@ function App() {
         <TabContent active={activeTab === ActiveTab.Arts}>{ARTS_BULLETS}</TabContent>
       </Section>
       <Section className="mt-10">
-        <BlockHeader text="Featured Work" light={true} description="Click to expand" />
-        <div className="flex my-7 items-center">
+        <BlockHeader text="Featured Work" light={true} description="Click each item to expand" />
+        <div className="md:flex my-7 items-center">
           <ExternalLogo onClick={() => setActiveAffil(AffiliationLogo.CruiseAutomation)} affiliation={AffiliationLogo.CruiseAutomation} />
           <ExternalLogo onClick={() => setActiveAffil(AffiliationLogo.LiveXYZ)} affiliation={AffiliationLogo.LiveXYZ} />
           <ExternalLogo onClick={() => setActiveAffil(AffiliationLogo.FalconX)} affiliation={AffiliationLogo.FalconX} />
@@ -138,18 +138,16 @@ function App() {
           company="Cruise Automation"
           period="Aug 2018 - Jun 2019"
           contributions={[
-            <>
-              Frontend Tech Lead who built Cruise's ground truth mapping stack <em>Cartographer</em> for storing and ensuring accurate up-to-date road data.
-            </>,
-            `Led early architecture and design pattern decisions on principal mapping components for flexible, robust browser-based semantic mapping.`,
-            `Rewrote our ThreeJS + React-based 3D traffic object placement app to eliminate leaky memory issues with point cloud data in 2 months.`
+            'Mapping Team Frontend Engineer #2 who built our ground truth mapping stack for ensuring accurate up-to-date road data.',
+            `Led technical architecture decisions on mapping components for flexible, robust browser-based semantic mapping.`,
+            `Rewrote our ThreeJS + React 3D traffic object placement app to eliminate leaky memory issues with point cloud data.`
           ]}
           outcomes={[
             <>
               Cruise decouples its ground truth success from an outdated academic GIS application into a custom-built app called <em>Cartographer</em>.
             </>,
             <>
-              <em>Cartographer</em> is one of the most well maintained codebases at Cruise.
+              <em>Cartographer</em> is one of the most well maintained codebases at Cruise with 30+ contributors.
             </>,
             <>
               <em>Cartographer</em> becomes mission critical software for storing and transmitting semantic ground truth to and from Cruise's self driving car fleet in real time.
@@ -162,24 +160,24 @@ function App() {
           periodType="Full Time (Acquisition-Based Hire)"
           period="Jan 2021 - Present"
           contributions={[
-            'Frontend-focused Tech Lead who resource planned and helped scale the full stack team of 16 behind our comprehensive one-stop shop financial services platform.',
-            `Helped design and delivered on our trading UI for placing real time trades across many cryptocurrencies and trade types.`,
-            `Implemented Agile Software practices for delivering quickly and on complex project interdependencies, when before there were none.`,
-            `Worked cross-functionally with product managers and designers to identify stuck user flows and develop high quality UX's with industry best practices in mind.`,
+            'Resource planned and helped scale a full stack team of 16 behind our one-stop shop financial services platform.',
+            `Identified stuck user flows and develop high quality UX's with industry best practices in mind.`,
+            `Developed our trading UI for placing real time trades across cryptocurrencies and trade types.`,
+            `Implemented Agile Software practices for delivering quickly and on complex project interdependencies.`,
           ]}
           outcomes={[
             <>
-              Former broken user flows and project management practices were consolidated into a new, clean, powerful, singular application.
+              Real time trades are being executed with greater precision and speed for higher client profitability.
             </>,
             <>
-              Real time trades get executed with greater precision and speed for higher per-client profitability.
+              Former broken user flows and project management practices were consolidated into a powerful singular application.
             </>,
             <>
-              New capabilities including Staking, Consolidated Wallet Balances, Stop Loss orders, and more were delivered to clients.
+              FalconX became the first CFTC registered SWAP dealer for cryptocurrencies in the USA, due to our execution speed.
             </>,
             <>
-              FalconX became the first CFTC registered SWAP dealer for cryptocurrencies in the US due to our execution and speed.
-            </>
+              New platform capabilities including Staking, Consolidated Wallet Balances, Stop Loss orders were unlocked.
+            </>,
           ]}
         />
         <BlockRole
@@ -188,11 +186,13 @@ function App() {
           periodType="Contract"
           period="Jun 2019 - Oct 2019"
           contributions={[
-            'Developed the major course for the privately accredited Full Stack Web Developer Nanodegree program taken by many thousands worldwide',
+            <>
+              Developed the major course for the accredited <em>Full Stack Web Developer Nanodegree</em> program, a 3-month program, taken by many thousand students worldwide.
+            </>,
             `Designed the curricula and starred in instructive videos for gently guiding students through a difficult array of topics including SQL database management, full stack development with Flask and SQL, and CRUD application development.`,
           ]}
           outcomes={[
-            'Enabled many thousands to become professional software engineers from nontechnical backgrounds from all over the world.',
+            'Enabled many thousands from diverse backgrounds and countries to become professional software engineers from nontechnical backgrounds.',
             'Became a featured course for One Million Arab Coders Initiative, sponsored by the UAE Prime Minister, and for Andela, a preeminent engineering talent firm based in Africa.',
             'Developed one of the most highly ranked course tracks for a preeminent global technical learning platform',
           ]}
@@ -205,12 +205,12 @@ function App() {
           contributions={[
             'As Frontend Tech Lead, built Live\'s content management system and machine learning signals processing application for collecting and curating urban location data (ReactJS, AngularJS, MongoDB, Go)',
             'Led a 10-person team of product managers, designers, and engineeers to reinvent our ground truth collection efforts and ground truth app UX in order to create consistent, comprehensive data collection pipelines for 2.5MM+ location records across 35 US metros.',
-            'As COO, identified bottlenecks in our company culture and developed a long-term Mission and Values document that fixed toxic cultural issues and motivated our company to accelerate towards our company mission statement.',
+            'As interim COO, identified bottlenecks in our company culture and developed a long-term Mission and Values document that fixed toxic cultural issues and motivated our company to accelerate towards our company mission statement.',
             'Retrained our business success team to align with our product understanding by developing and disseminating a Live Framework document of cohesive company product terms and concepts.'
           ]}
           outcomes={[
             'Live XYZ became the most vertically and horizontally integrated location intelligence partner in existence in New York City, now working with over 140+ city districts, operators, the Mayor\'s Office, MTA, NYPD, Department of Finance and Taxation, and more.',
-            `Built the company's competitive advantage to solidify continuous success as a NYC City Budget line item, building continuous financial resilience for the company.`
+            'Built the company\'s competitive advantage to solidify continuous success as a NYC City Budget line item, building continuous financial resilience for the company.'
           ]}
         />
       </Section>

@@ -3,7 +3,7 @@ import { APP_MAX_WIDTH } from '../../contants';
 
 const Section = ({ children, className, fullWidth, id }: { children: any, className?: string, fullWidth?: boolean, id?: string; }) => (
   <section id={id} className={classNames(
-    "mx-auto py-7",
+    "mx-auto py-7 px-6",
     className,
     {
       // [APP_MAX_WIDTH]: !fullWidth,

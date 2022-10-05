@@ -138,7 +138,7 @@ const Resume = ({
                 Former broken user flows and project management practices were consolidated into a powerful singular application.
               </>,
               <>
-                FalconX became the first CFTC registered SWAP dealer for cryptocurrencies in the USA, due to our execution and speed.
+                FalconX became the first CFTC registered SWAP dealer for cryptocurrencies in the USA, due to our execution speed.
               </>,
               <>
                 New platform capabilities including Staking, Consolidated Wallet Balances, Stop Loss orders were unlocked.
@@ -180,7 +180,7 @@ const Resume = ({
               `Designed the curricula and starred in instructive videos for gently guiding students through a difficult array of topics including SQL database management, full stack development with Flask and SQL, and CRUD application development.`,
             ]}
             outcomes={[
-              'Enabled many thousands to become professional software engineers from nontechnical backgrounds from all over the world.',
+              'Enabled many thousands from diverse backgrounds and countries to become professional software engineers from nontechnical backgrounds.',
               'Became a featured course for One Million Arab Coders Initiative, sponsored by the UAE Prime Minister, and for Andela, a preeminent engineering talent firm based in Africa.',
               'Developed one of the most highly ranked course tracks for a preeminent global technical learning platform',
             ]}
@@ -194,11 +194,9 @@ const Resume = ({
             role="Senior Software Engineer"
             period="Aug 2018 - Jun 2019"
             contributions={[
-              <>
-                Mapping Team Frontend Engineer #2 who built Cruise's ground truth mapping stack <em>Cartographer</em> for storing and ensuring accurate up-to-date road data.
-              </>,
-              `Led early architecture and design pattern decisions on principal mapping components for flexible, robust browser-based semantic mapping.`,
-              `Rewrote our ThreeJS + React-based 3D traffic object placement app to eliminate leaky memory issues with point cloud data in 2 months.`
+              'Mapping Team Frontend Engineer #2 who built our ground truth mapping stack for ensuring accurate up-to-date road data.',
+              `Led technical architecture decisions on mapping components for flexible, robust browser-based semantic mapping.`,
+              `Rewrote our ThreeJS + React 3D traffic object placement app to eliminate leaky memory issues with point cloud data.`
             ]}
             outcomes={[
               <>

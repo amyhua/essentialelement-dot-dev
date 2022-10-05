@@ -58,8 +58,11 @@ const Logo = ({ className, full = false, size = 24 }: { className: string, full:
   </div>
 );
 
-export const LogoXL = () => (
-  <EELogoSquare className="h-full inline-block" size={60} />
+export const LogoXL = ({ className }: { className?: string; }) => (
+  <EELogoSquare className={classNames(
+    "h-full inline-block",
+    className
+  )} size={60} />
 )
 
 export enum AffiliationLogo {
@@ -100,14 +103,14 @@ export const ExternalLogo = ({ affiliation, onClick, className, }: { affiliation
   <img alt={affiliation} onClick={onClick} title={affiliation} src={getImgSrc(affiliation)} className={classNames(
     "inline-block h-20",
     "py-2 px-3",
-    "print:h-0 print:w-0 print:p-0 print:m-0",
+  "print:h-0 print:w-0 print:p-0 print:m-0",
     {
       "cursor-pointer mr-12 rounded-lg border-2 border-transparent hover:border-black": !!onClick,
     },
     {
       "ml-3 py-2 pr-3": affiliation === AffiliationLogo.LiveXYZ,
-      "py-6": affiliation === AffiliationLogo.CruiseAutomation,
-      "py-0 mt-2": affiliation === AffiliationLogo.FalconX,
+      "py-6 pl-0": affiliation === AffiliationLogo.CruiseAutomation,
+      "py-0 px-0 mt-2": affiliation === AffiliationLogo.FalconX,
       "mt-2": affiliation === AffiliationLogo.Udacity,
       "py-2 mr-7": affiliation === AffiliationLogo.CanyonCinema,
       "py-3": affiliation === AffiliationLogo.YourBase,
