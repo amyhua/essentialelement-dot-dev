@@ -246,7 +246,7 @@ function App() {
         </div>
         <p className="text-xl mt-5 mb-14">
           <h2 className="font-bold text-2xl">
-            Open for Hire
+            Open for Hire.
           </h2>
           <div className="mt-3">
             Your inquiries are welcome. Send an email to <a className="underline" href="mailto:amy@essentialelement.dev">amy@essentialelement.dev</a> to get the conversation started.
