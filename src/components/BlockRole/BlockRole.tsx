@@ -79,7 +79,7 @@ const BlockRole = ({
       )}>
         {
           contributions.map((contrib: string, i: number) => (
-            <li className={i === 0 ? classNames("pb-2", {
+            <li className={i === 0 ? classNames("pt-2", {
               "pt-3": size === 'large',
               "pt-2": size === 'small'
             }) : undefined}>
@@ -89,7 +89,7 @@ const BlockRole = ({
         }
         {
           outcomes.map((outcome: string, i: number) => (
-            <li className={i === 0 ? classNames("pb-2", {
+            <li className={i === 0 ? classNames("pt-2", {
               "pt-3": size === 'large',
               "pt-2": size === 'small'
             }) : undefined}>
