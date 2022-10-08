@@ -108,12 +108,12 @@ function App() {
             </>
             :
             <>
-              <div className="pb-2 text-orange-500">
+              <div className="pb-2 text-black">
                 creative technology shop
               </div>
             </>
           }
-          <div className="pb-5">
+          <div className="pb-5 text-slate-400">
             based in San Francisco, CA
           </div>
           <div>
