@@ -64,7 +64,7 @@ const Resume = ({
           width: 0,
           position: 'absolute'
         }} title="print" />
-        <main className="my-10 print:my-0 bg-white shadow-md pt-8 pb-14 px-8 mx-auto max-w-7xl mb-10" id="contents">
+        <main className="my-10 print:my-0 bg-white shadow-md print:shadow-none pt-8 pb-14 print:pb-3 px-8 mx-auto max-w-7xl mb-10" id="contents">
           <h2> <span className="font-bold text-lg">{name}</span>
           <Middot />
           <span>
@@ -99,7 +99,8 @@ const Resume = ({
               <p>
               Free Map Club is creating a contemporary local app-based community around the effective and rich reporting and exchange of free stuff.
               </p>
-              <a className="mt-2 inline-block underline text-blue-800" target="_blank" href="https://docs.google.com/document/d/1YcXFJmJXPPfULp0dN9qiGPwEM7xp-v4sW0YbKO4oXxY/edit?usp=sharing">
+              <a className="mt-2 inline-block underline text-blue-800" target="_blank"
+                href="https://docs.google.com/document/d/1YcXFJmJXPPfULp0dN9qiGPwEM7xp-v4sW0YbKO4oXxY/edit?usp=sharing">
                 See Product White Paper
               </a>
             </div>
