@@ -227,7 +227,9 @@ function App() {
         <FounderBio />
       </Section>
       <Section className="mt-20">
-        <BlockHeader text="Working Principles" />
+        <div className="mt-15 text-lg bg-black inline-block py-2 px-4 text-white tracking-widest uppercase mb-3 font-bold">
+          Principles
+        </div>
         <div className="sm:flex my-7 items-center">
           <Tile header="The User is King.">
             We obsess about user wants and execute at every step with the user in mind. We prioritize meeting user needs above all else when we execute.
