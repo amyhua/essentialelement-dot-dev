@@ -94,10 +94,10 @@ const Resume = ({
           <ResumeHr title="Personal Projects" />
           <div className="sm:flex">
             <div className="py-5 px-4 rounded-lg border flex-1 sm:mr-2 border-gray-600">
-              <h3 className="uppercase italic tracking-widest font-bold">Free Map Club</h3>
+              <h3 className="uppercase italic tracking-widest font-bold">Free Map</h3>
               <a className="underline mb-3 block text-blue-800" href="//freeganmap.com" target="_blank">freemap.club</a>
               <p>
-              Free Map Club is creating a contemporary local app-based community around the effective and rich reporting and exchange of free stuff.
+              Free Map is creating a local app-based community around discovering and posting free stuff in your city. 2nd place winner of the Best Smart Contract Award by ApeWorx at ETHGlobal New York 2022.
               </p>
               <a className="mt-2 inline-block underline text-blue-800" target="_blank"
                 href="https://docs.google.com/document/d/1YcXFJmJXPPfULp0dN9qiGPwEM7xp-v4sW0YbKO4oXxY/edit?usp=sharing">
@@ -108,7 +108,7 @@ const Resume = ({
               <h3 className="uppercase italic tracking-widest font-bold">EssentialElement.Dev</h3>
               <a className="underline mb-3 block text-blue-800" href="//essentialelement.dev" target="_blank">essentialelement.dev</a>
               <p className="mb-2">
-                Technology shop offering technical consulting and development services, including technical scoping, UI/UX design, and software development.
+                Freelancer offering technical consulting and development services, including technical scoping, UI/UX design, and software development.
               </p>
               <a className="mt-2 inline-block underline text-blue-800" target="_blank" href="https://drive.google.com/file/d/1LYIvcXnuA5lFrWcGf9vRGZ9IADe5ZVlP/view?usp=sharing">
                 See Example Scope Doc Deliverable
