@@ -115,7 +115,7 @@ const Resume = ({
               </a>
             </div>
           </div>
-          <ResumeHr title="Engineering Experience" />
+          <ResumeHr title="Experience" />
           <BlockRole
             active={true}
             affiliationLogo={AffiliationLogo.FalconX}
@@ -133,16 +133,16 @@ const Resume = ({
             ]}
             outcomes={[
               <>
-                Real time trades are being executed with greater precision and speed for higher client profitability.
+                FalconX became the first CFTC registered SWAP dealer for cryptocurrencies in the USA and wins Most Innovative FinTech Solution by the 2022 Tech Ascension Awards
               </>,
               <>
-                Former broken user flows and project management practices were consolidated into a powerful singular application.
+                Real time trades are executed with greater precision and speed for higher, per client profit margins.
               </>,
               <>
-                FalconX became the first CFTC registered SWAP dealer for cryptocurrencies in the USA, due to our execution speed.
+                Broken user flows were consolidated into a powerful singular application, and team velocity increased with improved project organization.
               </>,
               <>
-                New platform capabilities including Staking, Consolidated Wallet Balances, Stop Loss orders were unlocked.
+                Implemented major platform capabilities including Staking, Consolidated Wallet Balances, and Stop Loss orders.
               </>,
             ]}
           />
@@ -156,13 +156,14 @@ const Resume = ({
             periodType="Full Time"
             period="Oct 2019 - Jan 2022"
             contributions={[
-              'Tech Lead leading all phases of UI/UX design and frontend development, from conducting user research to design and coding.',
+              'Tech Lead executing all phases of UI/UX design and frontend development, from conducting user research to design and coding.',
               'Built a real-time, Jenkins-like build logger and data visualizations for debugging build failures in ReactJS, D3.js, & Python.',
-              'Led the landing page UX and storytelling journey, including writing marketing copy for investors and customers to understand and use our product.',
+              'Led the landing page UX and storytelling journey, including copy, and UX story for potential investors and customers.',
             ]}
             outcomes={[
-              'Expedited sales and user downloads by 10x+ via conversion-optimizing landing page strategies.',
+              'Customers can execute accelerated builds from their account dashboards in an easy-to-use UI.',
               'Reduced frictions in our user onboarding journey by simplifying and removing complex steps to convert new users into power users quickly.',
+              'Expedited sales and user downloads by over 10x+ via conversion-optimizing landing page strategies.',
             ]}
           />
           <BlockRole
@@ -176,14 +177,14 @@ const Resume = ({
             period="Jun 2019 - Oct 2019"
             contributions={[
               <>
-                Developed the major course for the accredited <em>Full Stack Web Developer Nanodegree</em> program, a 3-month program, taken by many thousand students worldwide.
+                Developed the major course for the <em>Full Stack Web Developer Nanodegree</em>, a 3-month program, for thousands of students.
               </>,
-              `Designed the curricula and starred in instructive videos for gently guiding students through a difficult array of topics including SQL database management, full stack development with Flask and SQL, and CRUD application development.`,
+              `Starred in video-led learning modules for students to learn database management and full stack app development with Flask and Postgresql.`,
             ]}
             outcomes={[
-              'Enabled many thousands from diverse backgrounds and countries to become professional software engineers from nontechnical backgrounds.',
-              'Became a featured course for One Million Arab Coders Initiative, sponsored by the UAE Prime Minister, and for Andela, a preeminent engineering talent firm based in Africa.',
-              'Developed one of the most highly ranked course tracks for a preeminent global technical learning platform',
+              'Enabled thousands of students from diverse backgrounds and ages to become professional software engineers.',
+              'Featured in One Million Arab Coders Initiative, sponsored by the UAE Prime Minister, and Andela, a preeminent engineering firm in Africa.',
+              'Became a top rated course for Udacity with a 4.5/5 overall program rating out of 746 reviews.',
             ]}
           />
           <BlockRole
@@ -207,7 +208,7 @@ const Resume = ({
                 <em>Cartographer</em> is one of the most well maintained codebases at Cruise and grew to 30+ contributors in 3 months.
               </>,
               <>
-                <em>Cartographer</em> becomes mission critical software for storing and transmitting semantic ground truth to and from Cruise's self driving car fleet in real time.
+                <em>Cartographer</em> becomes mission critical software for storing and transmitting semantic ground truth to and from Cruise's self driving fleet.
               </>
             ]}
           />
@@ -221,14 +222,14 @@ const Resume = ({
             periodType="Full-Time"
             period="Jan 2015 - Jan 2018"
             contributions={[
-              'As Frontend Tech Lead, built Live\'s content management system and machine learning signals processing application for collecting and curating urban location data (ReactJS, AngularJS, MongoDB, Go)',
-              'Led a 10-person team of product managers, designers, and engineeers to reinvent our ground truth collection efforts and ground truth app UX in order to create consistent, comprehensive data collection pipelines for 2.5MM+ location records across 35 US metros.',
-              'As interim COO, identified bottlenecks in our company culture and developed a long-term Mission and Values document that fixed toxic cultural issues and motivated our company to accelerate towards our company mission statement.',
-              'Retrained our business success team to align with our product understanding by developing and disseminating a Live Framework document of cohesive company product terms and concepts.'
+              'Led a team of product managers, designers, and engineeers to reinvent our ground truth collection efforts and UX forconsistent, comprehensive data collection across 2.5MM+ location records in 35 US metros.',
+              'Frontend Tech Lead who built our content management system and machine learning signals processing application in ReactJS and AngularJS.',
+              'Delivered and disseminated our Mission and Values for a mission-oriented company culture.',
+              'Aligned our company product understanding with cohesive product frameworks, terms, and concepts.'
             ]}
             outcomes={[
-              'Live XYZ became the most vertically and horizontally integrated location intelligence partner in existence in New York City, now working with over 140+ city districts, operators, the Mayor\'s Office, MTA, NYPD, Department of Finance and Taxation, and more.',
-              'Built the company\'s competitive advantage to solidify continuous success as a NYC City Budget line item, building continuous financial resilience for the company.'
+              'Live XYZ became the most vertically and horizontally integrated location intelligence partner in New York City, working with 140+ city districts, operators, the Mayor\'s Office, MTA, NYPD, Department of Finance and Taxation, and more.',
+              'Contributed to our company\'s competitive advantage, becoming the sole location intelligence partner for the City of New York.'
             ]}
           />
           <h3 className="mt-5 font-bold text-lg">Prior Roles</h3>
