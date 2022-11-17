@@ -97,7 +97,7 @@ const Resume = ({
               <h3 className="uppercase italic tracking-widest font-bold">Free Map</h3>
               <a className="underline mb-3 block text-blue-800" href="//freeganmap.com" target="_blank">freemap.club</a>
               <p>
-              Free Map is creating a local app-based community around discovering and posting free stuff in your city. 2nd place winner of the Best Smart Contract Award by ApeWorx at ETHGlobal New York 2022.
+              Free Map is an app for discovering and posting free stuff in your city, utilizing web3 technologies and a cryptocurrency token to power karmic actions around giving free stuff away. 2nd place winner of the Best Smart Contract Award by ApeWorx at ETHGlobal New York 2022.
               </p>
               <a className="mt-2 inline-block underline text-blue-800" target="_blank"
                 href="https://docs.google.com/document/d/1YcXFJmJXPPfULp0dN9qiGPwEM7xp-v4sW0YbKO4oXxY/edit?usp=sharing">
