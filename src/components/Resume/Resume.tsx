@@ -95,7 +95,7 @@ const Resume = ({
           <div className="sm:flex">
             <div className="py-5 px-4 rounded-lg border flex-1 sm:mr-2 border-gray-600">
               <h3 className="uppercase italic tracking-widest font-bold">Free Map</h3>
-              <a className="underline mb-3 block text-blue-800" href="//freeganmap.com" target="_blank">freemap.club</a>
+              <a className="underline mb-3 block text-blue-800" href="https://freeganmap.com/" target="_blank">freemap.club</a>
               <p>
               Free Map is an app for discovering and posting free stuff in your city, utilizing web3 technologies and a cryptocurrency token to power karmic actions around giving free stuff away. 2nd place winner of the Best Smart Contract Award by ApeWorx at ETHGlobal New York 2022.
               </p>
