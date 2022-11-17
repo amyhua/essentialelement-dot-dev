@@ -83,19 +83,19 @@ const Resume = ({
             <HtmlProgressBar progress={10} label="HTML & CSS" />
             <HtmlProgressBar progress={10} label="Async Programming" />
             <HtmlProgressBar progress={10} label="Technical Communication" />
-            <HtmlProgressBar progress={9} label="Product & Business Sense" />
-            <HtmlProgressBar progress={9} label="UI/UX Sensibilities" />
-            <HtmlProgressBar progress={8} label="Technical Roadmap Advocacy" />
+            <HtmlProgressBar progress={9} label="Product Sense" />
+            <HtmlProgressBar progress={9} label="Design Sensibilities" />
+            <HtmlProgressBar progress={8} label="Technical Roadmapping" />
             <HtmlProgressBar progress={9} label="Growth via Personal Projects" />
-            <HtmlProgressBar progress={9} label="Excellence Shipping Software" />
-            <HtmlProgressBar progress={6} label="Large Teams Leadership" />
-            <HtmlProgressBar progress={3} label="CI/CD Automation Knowledge" />
+            <HtmlProgressBar progress={9} label="Shipping Software" />
+            <HtmlProgressBar progress={7} label="Large Teams Leadership" />
+            <HtmlProgressBar progress={3} label="CI/CD Automation" />
           </ul>
           <ResumeHr title="Personal Projects" />
           <div className="sm:flex">
             <div className="py-5 px-4 rounded-lg border flex-1 sm:mr-2 border-gray-600">
               <h3 className="uppercase italic tracking-widest font-bold">Free Map Club</h3>
-              <a className="underline mb-3 block text-blue-800" href="//freemap.club" target="_blank">freemap.club</a>
+              <a className="underline mb-3 block text-blue-800" href="//freeganmap.com" target="_blank">freemap.club</a>
               <p>
               Free Map Club is creating a contemporary local app-based community around the effective and rich reporting and exchange of free stuff.
               </p>
@@ -106,7 +106,7 @@ const Resume = ({
             </div>
             <div className="print:hidden py-5 px-4 rounded-lg border flex-1 sm:mt-0 mt-3 sm:ml-2 border-gray-600 print:px-0 print:py-0 print:border-none">
               <h3 className="uppercase italic tracking-widest font-bold">EssentialElement.Dev</h3>
-              <a className="underline mb-3 block text-blue-800" href="//freemap.club" target="_blank">essentialelement.dev</a>
+              <a className="underline mb-3 block text-blue-800" href="//essentialelement.dev" target="_blank">essentialelement.dev</a>
               <p className="mb-2">
                 Technology shop offering technical consulting and development services, including technical scoping, UI/UX design, and software development.
               </p>
