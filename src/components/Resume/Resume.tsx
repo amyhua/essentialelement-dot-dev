@@ -94,7 +94,7 @@ const Resume = ({
           <ResumeHr title="Personal Projects" />
           <div className="sm:flex">
             <div className="py-5 px-4 rounded-lg border flex-1 sm:mr-2 border-gray-600">
-              <h3 className="uppercase italic tracking-widest font-bold">Free Map</h3>
+              <h3 className="uppercase italic tracking-widest font-bold">WorkoutSesh</h3>
               <a className="underline mb-3 block text-blue-800" href="https://workoutsesh.app/" target="_blank">WorkoutSesh</a>
               <p>
                 Add exercises to a playlist, and play them from one to the next during your workout. Easy as pie.
@@ -103,10 +103,10 @@ const Resume = ({
             <div className="print:hidden py-5 px-4 rounded-lg border flex-1 sm:mt-0 mt-3 sm:ml-2 border-gray-600 print:px-0 print:py-0 print:border-none">
               <h3 className="uppercase italic tracking-widest font-bold">EssentialElement.Dev</h3>
               <a className="underline mb-3 block text-blue-800" href="//essentialelement.dev" target="_blank">essentialelement.dev</a>
-              <p className="mb-2">
+              <p>
                 Freelancer offering software development and advisory services.
               </p>
-              <a className="mt-2 inline-block underline text-blue-800" target="_blank" href="https://drive.google.com/file/d/1LYIvcXnuA5lFrWcGf9vRGZ9IADe5ZVlP/view?usp=sharing">
+              <a className="inline-block underline text-blue-800" target="_blank" href="https://drive.google.com/file/d/1LYIvcXnuA5lFrWcGf9vRGZ9IADe5ZVlP/view?usp=sharing">
                 See Example Scope Doc
               </a>
             </div>
